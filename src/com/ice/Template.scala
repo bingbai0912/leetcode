@@ -1,7 +1,10 @@
 package com.ice
 
 /**
-  * Created by hadoop on 9/12/17.
+  * Created by baibing on 9/12/17.
+  * For Q435:
+  * 解决思路如下:
+  * 
   */
 
 package object LeetCode {
