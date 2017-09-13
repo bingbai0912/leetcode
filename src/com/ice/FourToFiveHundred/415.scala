@@ -1,9 +1,11 @@
 package com.ice.FourToFiveHundred
 
 /**
-  * Created by baibing on 9/12/17.
-  * For Q415:
+  * Created by baibing on 9/13/17.
+  * For Q415: Add Strings
   * 解决思路如下:
+  * 先将字符串首位调换这样能使位数(个十百千..)对齐，同位向加并判断是否进位。
+  * 最后再处理一下特殊情况--如果最高为相加进位则首位补1
   */
 
 object Solution415 {
@@ -29,9 +31,9 @@ object Solution415 {
 
 object FourOneFive {
   def main(args: Array[String]): Unit = {
-    val num1 = "565678"
-    val num2 = "4234456"
+    val num1 = "56567812312312334213123"
+    val num2 = "42323412335234457783434456"
     val result = Solution415.addStrings(num1, num2)
-    println(num1+"+"+num2+"="+result)
+    println(num1+" + "+num2+" = "+result)
   }
 }
