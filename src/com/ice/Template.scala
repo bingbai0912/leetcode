@@ -7,11 +7,11 @@ package com.ice
   * 
   */
 
+object Solution {
+
+}
+
 package object LeetCode {
   def main(args: Array[String]) {
   }
-}
-
-object Solution {
-
 }

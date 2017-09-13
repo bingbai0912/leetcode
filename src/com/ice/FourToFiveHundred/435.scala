@@ -8,17 +8,7 @@ package com.ice.FourToFiveHundred
   * 首先计算所有的非重叠区间，最后再用所有区间数减去非重叠区间即可。
   */
 
-object LeetCode {
-  def main(args: Array[String]) {
-    //[ [1,2], [2,3], [3,4], [1,3] ]
-    // val input = Array(new Interval(1,2),new Interval(2,3),new Interval(3,4),new Interval(1,3))
-    val input = Array(new Interval(1,2),new Interval(1,2),new Interval(1,2))
-    val result = Solution.eraseOverlapIntervals(input)
-    println(result)
-  }
-}
-
-object Solution {
+object Solution435 {
   def eraseOverlapIntervals(intervals: Array[Interval]): Int = {
     // 处理特殊情况，输入数组长度为0时直接返回结果。
     if (intervals.length==0) return 0
@@ -45,4 +35,14 @@ object Solution {
 class Interval(var _start: Int = 0, var _end: Int = 0) {
   var start: Int = _start
   var end: Int = _end
+}
+
+object LeetCode {
+  def main(args: Array[String]) {
+    //[ [1,2], [2,3], [3,4], [1,3] ]
+    // val input = Array(new Interval(1,2),new Interval(2,3),new Interval(3,4),new Interval(1,3))
+    val input = Array(new Interval(1,2),new Interval(1,2),new Interval(1,2))
+    val result = Solution435.eraseOverlapIntervals(input)
+    println(result)
+  }
 }
