@@ -13,7 +13,6 @@ object Solution415 {
     val (maxLen,big,small) = if (num1.length>num2.length) {
       (num1.length,num1.reverse,num2.reverse)
     } else (num2.length,num2.reverse,num1.reverse)
-
     val result :StringBuffer = new StringBuffer()
     var up = false
     for(i<-0 until maxLen){
