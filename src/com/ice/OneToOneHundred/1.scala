@@ -1,20 +1,25 @@
 package com.ice.OneToOneHundred
-
+import scala.util.control.Breaks
 /**
   * Created by baibing on 9/12/17.
   * For Q1:
   * 解决思路如下:
-  * 
+  * 从第一个数开始取，取到后依次和后面的数字相加判断值是否等于target.
+  * 是则返回结果，并结束循环
   */
 
 object Solution1 {
   def twoSum(nums: Array[Int], target: Int): Array[Int] = {
     val result = new Array[Int](2)
-    for(i<-0 until nums.length-1){
-      for(j<-i+1 until  nums.length){
-        if(nums(i)+nums(j)==target){
-          result(0)=i
-          result(1)=j
+    val loop = new Breaks
+    loop.breakable {
+      for (i <- 0 until nums.length - 1) {
+        for (j <- i + 1 until nums.length) {
+          if (nums(i) + nums(j) == target) {
+            result(0) = i
+            result(1) = j
+            loop.break()
+          }
         }
       }
     }
