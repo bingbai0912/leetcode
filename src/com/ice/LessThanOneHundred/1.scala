@@ -1,7 +1,7 @@
-package com.ice.OneToOneHundred
+package com.ice.LessThanOneHundred
 import scala.util.control.Breaks
 /**
-  * Created by baibing on 9/12/17.
+  * Created by baibing on 9/14/17.
   * For Q1:
   * 解决思路如下:
   * 从第一个数开始取，取到后依次和后面的数字相加判断值是否等于target.
