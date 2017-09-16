@@ -26,7 +26,8 @@ package com.ice.LessThanFiveHundred
   * 2. up时如果x轴到top并且y轴到end，则以前者处理逻辑为准(所以if判断的顺序不能乱)。
   *    down时同理
   *
-  * 作者注，
+  * 第一种实现方式虽然可行，但效率较低导致提交到leetcode上会失败(Time Limit Exceeded)
+  * 哎，伤心，明天再想想怎么优化
   */
 
 object Solution498 {
@@ -79,6 +80,10 @@ object Solution498 {
     }
     result(x*y-1)=matrix(y-1)(x-1)
     result
+  }
+
+  def findDiagonalOrder_improve(matrix: Array[Array[Int]]): Array[Int] = {
+    null
   }
 }
 
