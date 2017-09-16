@@ -11,7 +11,7 @@ object Solution {
 
 }
 
-package object LeetCode {
+object Template{
   def main(args: Array[String]) {
   }
 }

@@ -37,7 +37,7 @@ class Interval(var _start: Int = 0, var _end: Int = 0) {
   var end: Int = _end
 }
 
-object LeetCode {
+object FourThreeFive {
   def main(args: Array[String]) {
     //[ [1,2], [2,3], [3,4], [1,3] ]
     // val input = Array(new Interval(1,2),new Interval(2,3),new Interval(3,4),new Interval(1,3))
